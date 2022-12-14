@@ -1,0 +1,152 @@
+:root {
+  --main-color: #2196f3;
+  --cyan: #009688;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+.name {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+.message span {
+  font-weight: bold;
+  color: var(--cyan);
+}
+.message span::before {
+  content: "[ ";
+}
+.message span::after {
+  content: " ]";
+}
+.difficulty {
+  display: flex;
+  justify-content: center;
+}
+.difficulty select {
+  padding: 15px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  margin: 20px;
+  border-radius: 6px;
+}
+.difficulty li:hover {
+  opacity: 0.7;
+}
+.difficulty .easy {
+  background-color: green;
+}
+.difficulty .normal {
+  background-color: var(--main-color);
+}
+.difficulty .hard {
+  background-color: red;
+}
+.start {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--cyan);
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--main-color);
+  user-select: none;
+}
+.input {
+  margin: 15px 0;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 3px solid var(--main-color);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: var(--main-color);
+}
+input:focus {
+  outline: none;
+}
+.upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.upcoming-words div {
+  background-color: var(--main-color);
+  color: white;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+.control {
+  font-weight: bold;
+  color: var(--cyan);
+}
+.local-storage {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+}
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+.finish .good {
+  color: var(--main-color);
+}
+.finish .bad {
+  color: red;
+}
+.get-ready {
+  width: 25%;
+  margin: auto;
+  background-color: white;
+  color: var(--main-color);
+  font-size: 20px;
+}
